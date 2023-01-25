@@ -1,0 +1,77 @@
+.how-its-work__container {
+  background: rgba(74, 153, 211, 0.1);
+  margin-top: 7%;
+  @media (min-width: $large) {
+    padding-top: 4%;
+  }
+  @media (min-width: $xl) {
+    margin-top: -4%;
+  }
+}
+
+.how-its-work__title {
+  font-size: 20px;
+  color: #4a99d3;
+  text-align: center;
+  padding-top: 5%;
+  @media (min-width: $large) {
+    font-size: 26px;
+    font-weight: 700;
+    margin: auto 36%;
+    padding-top: 4%;
+  }
+  @media (min-width: $xl) {
+    font-size: 26px;
+    margin: auto 41%;
+    padding: 2% 0 3% 0;
+  }
+}
+.how-its-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $large) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media (min-width: $xl) {
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+  }
+  @media (min-width: $xxl) {
+    max-width: 67%;
+    padding-bottom: 3%;
+  }
+  &__card {
+    text-align: center;
+    margin: 5% 2%;
+    line-height: 30px;
+    img {
+      margin: 5% auto;
+    }
+    h3 {
+      font-size: 18px;
+      color: #0f001a;
+    }
+    p {
+      font-size: 15px;
+      color: #0f001a;
+    }
+    @media (min-width: $large) {
+      margin: 3% auto;
+    }
+    @media (min-width: $xl) {
+      margin: 3% auto;
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

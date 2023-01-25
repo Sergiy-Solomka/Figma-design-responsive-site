@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Objective";
+  font-weight: 400;
+  src: url("../font/Objective-Light.otf");
+}
+
+@font-face {
+  font-family: "Objective";
+  font-weight: 500;
+  src: url("../font/Objective-Medium.otf");
+}
+
+@font-face {
+  font-family: "Objective";
+  font-weight: 700;
+  src: url("../font/Objective-Bold.otf");
+}
+
+@import "section-screen-variables";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+@import "section-5";
+@import "section-6";
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Objective", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header,
+section {
+  padding: 1rem 0;
+}
+.container {
+  overflow-x: hidden;
+  /* padding: 0 1em; */
+}

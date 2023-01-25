@@ -1,0 +1,139 @@
+.download {
+  position: relative;
+  margin-top: 5%;
+  @media (min-width: $large) {
+    padding-bottom: 10%;
+  }
+
+  &__backgrounds {
+    display: none;
+    @media (min-width: $large) {
+      display: inline;
+    }
+  }
+  &__backgrounds-boxes-3 {
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    right: 0%;
+    @media (min-width: $large) {
+      top: 68%;
+      right: -3%;
+    }
+    @media (min-width: $xl) {
+      top: 83%;
+      right: -2%;
+    }
+    @media (min-width: $xxl) {
+      top: 85%;
+      right: 0%;
+    }
+  }
+  &__backgrounds-boxes-4 {
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: 0%;
+    @media (min-width: $large) {
+      top: 68%;
+      left: -2%;
+    }
+    @media (min-width: $xl) {
+      top: 84%;
+      left: -1%;
+    }
+    @media (min-width: $xxl) {
+      top: 86%;
+      left: -1%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $large) {
+      flex-direction: row;
+    }
+    @media (min-width: $xl) {
+      margin-top: -8%;
+    }
+  }
+
+  &__mockup {
+    max-width: 100%;
+  }
+  &__mockup img {
+    @media (min-width: $middle) {
+      margin: auto;
+    }
+    @media (min-width: $large) {
+      max-width: 200%;
+      margin-left: 41%;
+    }
+    @media (min-width: $xl) {
+      width: 516px;
+      margin: 14% 0 -23% 33%;
+    }
+    @media (min-width: $xxl) {
+      margin: 0 0 -23% 44%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    margin: 5% 5%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $large) {
+      margin-left: 29%;
+    }
+    @media (min-width: $xl) {
+      margin: 11% 0 0 28%;
+      width: 77%;
+    }
+    @media (min-width: $xxl) {
+      margin: 7% 15% 0 26%;
+    }
+  }
+  &__text-tittle {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #0f001a;
+    @media (min-width: $large) {
+      font-size: 28px;
+    }
+    @media (min-width: $xl) {
+      font-size: 25px;
+      line-height: 100%;
+    }
+  }
+  &__text-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 15px;
+    text-align: center;
+    color: #0f001a;
+    opacity: 50%;
+    @media (min-width: $large) {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: justify;
+      padding: 0 10%;
+      @media (min-width: $xl) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  &__btns {
+    display: inline-flex;
+    padding-top: 8%;
+  }
+  &__btns img {
+    width: 90%;
+    cursor: pointer;
+  }
+}

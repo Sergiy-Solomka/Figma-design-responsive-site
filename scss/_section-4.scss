@@ -1,0 +1,207 @@
+.what-our-custamers-say {
+  position: relative;
+  margin-top: 5%;
+  @media (min-width: $large) {
+    padding-bottom: 10%;
+  }
+
+  &__title {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: #0f001a;
+    @media (min-width: $large) {
+      padding-top: 0;
+      padding-bottom: 10%;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    @media (min-width: $xl) {
+      padding: 5% 0 0 10%;
+      font-size: 26px;
+    }
+    @media (min-width: $xxl) {
+      padding: 7% 0 0 10%;
+    }
+  }
+
+  &__background {
+    display: none;
+    @media (min-width: $large) {
+      padding: 0%;
+      margin: 0;
+      display: inline;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  &__dots-4 {
+    @media (min-width: $large) {
+      position: absolute;
+      z-index: -1;
+      top: 11%;
+      right: -5%;
+    }
+    @media (min-width: $xl) {
+      top: 26%;
+      right: -4%;
+    }
+    @media (min-width: $xxl) {
+      top: 25%;
+      right: -3%;
+    }
+  }
+
+  &__main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__girl {
+    background-color: rgba(74, 153, 211, 0.1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    padding-top: 30px;
+    @media (min-width: $middle) {
+      margin: auto;
+      width: 677px;
+      height: 324px;
+    }
+    @media (min-width: $large) {
+      width: 476px;
+      height: 416px;
+      margin: 0;
+    }
+    @media (min-width: $xl) {
+      width: 600px;
+      height: 400px;
+      margin-top: 15%;
+    }
+    @media (min-width: $xl) {
+      width: 677px;
+      height: 400px;
+      margin-top: 10%;
+    }
+    & img {
+      width: 200px;
+      height: 250px;
+      @media (min-width: $middle) {
+        width: 250px;
+        height: 400px;
+      }
+      @media (min-width: $large) {
+        width: 399px;
+        height: 519px;
+      }
+      @media (min-width: $xl) {
+        width: 399px;
+        height: 519px;
+        margin-left: 12%;
+      }
+    }
+  }
+}
+.carousel:checked + .feedback {
+  opacity: 1;
+}
+
+.feedback {
+  margin: 53% 10%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+  @media (min-width: $middle) {
+    margin: 45% 10%;
+  }
+  @media (min-width: $large) {
+    top: -29%;
+    left: 42%;
+    right: 2%;
+  }
+  @media (min-width: $xl) {
+    top: -28%;
+    left: 50%;
+    right: 1%;
+  }
+  @media (min-width: $xxl) {
+    top: -31%;
+    left: 43%;
+    right: 9%;
+  }
+
+  & .text {
+    padding-top: 5%;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0f001a;
+    opacity: 50%;
+    @media (min-width: $large) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  & .name {
+    padding-top: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #0f001a;
+    line-height: 100%;
+  }
+}
+
+#carousel-1:checked ~ .button1,
+#carousel-2:checked ~ .button2,
+#carousel-3:checked ~ .button3 {
+  display: flex;
+}
+
+.arrows-button {
+  display: none;
+  margin: 50% 5% 0 50%;
+  @media (min-width: $middle) {
+    margin: 28% 5% 0 50%;
+  }
+  @media (min-width: $large) {
+    position: absolute;
+    top: 36%;
+    left: 13%;
+  }
+  @media (min-width: $xl) {
+    top: 34%;
+    left: 25%;
+  }
+  @media (min-width: $xxl) {
+    top: 31%;
+    left: 20%;
+  }
+
+  .left-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a99d3;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+  }
+  .right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+}

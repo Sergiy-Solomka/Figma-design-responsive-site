@@ -1,0 +1,251 @@
+footer {
+  background-color: rgba(74, 153, 211, 1);
+  color: #ffffff;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  text-align: center;
+  @media (min-width: $large) {
+    flex-direction: row;
+    border-bottom: solid 2px #ffffff;
+  }
+  @media (min-width: $xl) {
+    margin-top: 6%;
+  }
+  &__logo {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 10%;
+    border-bottom: solid 2px #ffffff;
+    @media (min-width: $middle) {
+      font-size: 60px;
+      font-weight: 700;
+      padding: 2% 0 5% 0;
+    }
+    @media (min-width: $large) {
+      font-size: 34px;
+      padding-top: 0;
+      padding-left: 5%;
+      border-bottom: none;
+    }
+    @media (min-width: $xl) {
+      margin: -2% 0 0 4%;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    border-bottom: solid 2px #ffffff;
+    max-width: 100%;
+    width: 100%;
+    @media (min-width: $large) {
+      flex-direction: row;
+      justify-content: center;
+      text-align: left;
+      border-bottom: none;
+      padding-left: 1%;
+      margin: 0 -27% 0 -14%;
+    }
+    @media (min-width: $xl) {
+      justify-content: flex-start;
+      margin: -2% -27% 0 5%;
+      padding: 0;
+    }
+    @media (min-width: $xxl) {
+      margin: -2% -53% 0 5%;
+      padding: 0 0 0 4%;
+    }
+  }
+  &__nav a {
+    color: #ffffff;
+    @media (min-width: $large) {
+      font-size: 14px;
+    }
+    @media (min-width: $xl) {
+      font-weight: 400;
+    }
+  }
+  &__nav h3 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 3%;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    @media (min-width: $large) {
+      padding: 0;
+      font-size: 18px;
+    }
+    @media (min-width: $xl) {
+      font-weight: 500;
+    }
+    @media (min-width: $xxl) {
+      padding-bottom: 8%;
+    }
+  }
+  &__nav-quick-links {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 2px #ffffff;
+    padding-bottom: 5%;
+    @media (min-width: $large) {
+      border-bottom: none;
+      width: 21%;
+    }
+    @media (min-width: $xxl) {
+      width: 13%;
+    }
+  }
+
+  &__nav-others {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 2px #ffffff;
+    padding-bottom: 5%;
+    @media (min-width: $large) {
+      border-bottom: none;
+      padding-bottom: 1%;
+    }
+    @media (min-width: $xxl) {
+      width: 16%;
+    }
+  }
+  &__nav-products {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    @media (min-width: $xxl) {
+      width: 16%;
+    }
+  }
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media (min-width: $large) {
+      padding-right: 4%;
+      text-align: left;
+      font-size: 18px;
+    }
+    @media (min-width: $xl) {
+      width: 394px;
+      height: 122px;
+      padding: 0;
+      margin: 0 4% 0 0;
+    }
+  }
+  &__subscribe-tittle {
+    align-items: center;
+    padding: 8% 10%;
+    text-align: center;
+    @media (min-width: $middle) {
+      padding: 3% 10%;
+      font-size: 25px;
+    }
+    @media (min-width: $large) {
+      padding: 2% 2% 3% 25%;
+      text-align: left;
+      font-size: 18px;
+    }
+    @media (min-width: $xl) {
+      width: 364px;
+      height: 52px;
+      padding: 0;
+      font-weight: 400;
+      line-height: 26px;
+      margin: -4% 0 6% -26%;
+    }
+  }
+  &__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $large) {
+      flex-direction: row;
+      margin-left: 23%;
+    }
+    @media (min-width: $xl) {
+      margin-left: -21%;
+    }
+  }
+  &__subscribe input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8% 0;
+    border: none;
+    border-radius: 4px;
+    @media (min-width: $large) {
+      margin: 0 0;
+      padding: 9px 21px;
+    }
+    @media (min-width: $xl) {
+      width: 268px;
+      height: 50px;
+    }
+  }
+  &__email-btn {
+    padding-bottom: 15%;
+    @media (min-width: $large) {
+      width: 100%;
+      padding: 0 0 0 7%;
+    }
+  }
+  &__copyright-social {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: solid 2px #ffffff;
+    @media (min-width: $large) {
+      flex-direction: row;
+      border-top: none;
+      justify-content: space-around;
+    }
+    @media (min-width: $xl) {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0 0 0 -13%;
+    }
+    @media (min-width: $xxl) {
+      padding: 0;
+      margin: 0 0 0 -16%;
+    }
+  }
+
+  &__social {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 2px #ffffff;
+    @media (min-width: $large) {
+      border-bottom: none;
+      padding: 2% 0;
+    }
+    @media (min-width: $xl) {
+      margin: 0 -15% 0 0;
+    }
+    @media (min-width: $xxl) {
+      margin: 0 -16% 0 0;
+    }
+  }
+  &__social img {
+    @media (min-width: $large) {
+      padding: 2% 20px;
+    }
+    @media (min-width: $xl) {
+      padding: 2% 10px;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    padding: 4% 2% 6% 2%;
+    font-size: 20px;
+    @media (min-width: $large) {
+      padding: 2% 0;
+      font-size: 18px;
+    }
+  }
+}
